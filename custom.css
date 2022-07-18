@@ -1,0 +1,56 @@
+.text-color{
+    color: #06BBCC !important;
+}
+
+.bg-color{
+    background-color: #06BBCC !important;
+
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #06BBCC;
+    margin-right: 30px;
+    padding: 15px 0;
+    font-size: 15px;
+    outline: none;
+    font-weight: 500;
+}
+
+
+/* css for navbar section */
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #06BBCC;
+}
+
+.navbar .dropdown-toggle:after{
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    font-size: 12px;
+    vertical-align: middle;
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.navbar-light a.text-button{
+    color: #fff;
+    height: 75px;
+    font-family: 'Nunito',sans-serif;
+    font-family: 600;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.fa-arrow-right::before {
+    content: "\f061";
+}
+
+/* css for banner section */
+.h1-banner{
+    font-family: 'Nunito',sans-serif;
+    font-weight:800;
+    /* line-height: 85px; */
+    /* letter-spacing: -1.99px; */
+    /* font-size: 89px */
+}
