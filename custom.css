@@ -1,3 +1,13 @@
+body{
+    font-family: 'Nunito',sans-serif;
+
+}
+p{
+    font-size: 16px;
+    
+}
+
+
 .text-color{
     color: #06BBCC !important;
 }
@@ -7,6 +17,30 @@
 
 }
 
+.section-title::before{
+    width:calc(100% + 80px);
+    left:-40px;
+    position: absolute;
+    content: "";
+    height: 2px;
+    top: 4px;
+    z-index: -2;
+    background: #06BBCC;
+}
+
+.section-title::after{
+    width: calc(100% + 120px);
+    left:-60px;
+    margin-bottom: 1px;
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: 5px;
+    z-index: -1;
+    background: #06BBCC;
+}
+
+/* css for navbar */
 .navbar-light .navbar-nav .nav-link{
     color: #06BBCC;
     margin-right: 30px;
@@ -47,10 +81,109 @@
 }
 
 /* css for banner section */
-.h1-banner{
+
+
+.h1-banner {
+    -webkit-animation: action 2s linear ;
+    animation: action 2s  alternate;
     font-family: 'Nunito',sans-serif;
     font-weight:800;
-    /* line-height: 85px; */
-    /* letter-spacing: -1.99px; */
-    /* font-size: 89px */
 }
+
+  @keyframes action {
+    0%, 100% {
+      transform: translateY(-100px);
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+  }
+
+
+
+/* css for service section */
+.service-item{
+    background-color: rgb(244, 253, 255);
+    transition: .5s
+}
+.service-item:hover .service-icon {
+    color: #fff !important;
+  }
+.service-item:hover{
+    background-color: #06BBCC;
+    color: #fff;
+    margin-top: -12px;
+}
+
+/* css for about section */
+.about-img{
+    min-height: 450px;
+    visibility: visible;
+    animation-delay: 0.1s;
+    -webkit-animation: action 1.5s linear;
+    animation: action 1.5s  linear;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    
+    100% { transform: translateY(-70px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-70px); }
+}
+
+.about-caption{
+    visibility: visible;
+    animation-delay: 0.3s;
+    -webkit-animation: action 1.5s linear;
+    animation: action 1.5s  linear;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.section-title.text-start::before {
+    width: calc(100% + 40px);
+    left: 0;
+}
+
+.section-title.text-start::after {
+    width: calc(100% + 60px);
+    left: 0;
+}
+
+/* css for categories section */
+
+.category{
+    visibility: visible;
+    animation-delay: 0.1s;
+    -webkit-animation: action 1.5s linear;
+    animation: action 1.5s  linear;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    
+    100% { transform: translateY(-70px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-70px); }
+}
+
+.cat-caption{
+    margin-left: -100px;
+}
+
+.category img:hover{
+ transform: scale(1.1);
+}
+
+
