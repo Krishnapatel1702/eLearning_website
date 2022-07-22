@@ -443,43 +443,79 @@ p {
 
 .slide-p {
     background-color: rgb(236, 243, 245);
+    margin: 0px 10px;
 }
-
-
-
-
-
-
 
 /* css for testimonial slider */
-.slick-dots {
+/* .slick-dots {
     display: flex;
     justify-content: center;
-    margin: 60px 5px 0px;
-}
-
-.slick-dots li {
-    margin-top: 15px;
-    list-style: none;
     margin: 0 5px;
 }
 
-.slick-dots li button {
-    height: 15px;
-    width: 15px;
-    border-radius: 0px;
-    border: 1px solid #ccc;
-    background-color: white;
-    font-size: 0;
+.slick-dots li {
+    list-style: none;
 }
 
-.slick-center div {
+
+.slick-dots li button {
+     height: 20px;
+    width: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-top: 50px; 
+}
+
+.slick-center .slide-p {
     background-color: #06BBCC !important;
 }
 
 .slick-dots li.slick-active button {
     background: #06BBCC;
-}
+}  */
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0 5px;
+  }
+ .slick-dots{
+    
+    list-style: none;
+    text-decoration: none;
+ }
+  .slick-dots li{
+    margin: 0 5px;
+    margin-top:15px;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .slick-dots li button{
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #ccc;
+    background-color:white;
+    margin-top: 30px;
+    }
+
+  .slick-dots li button::before{
+    color: transparent !important;
+
+  }
+  
+  /* .slick-dots li button:focus{
+    background-color: #06BBCC;
+  } */
+  
+  .slick-center .slide-p{
+    background-color:#06BBCC !important;
+  }
+  .slick-dots li.slick-active button {
+      background:#06BBCC;
+  
+  }
 
 /* css for footer */
 footer {
